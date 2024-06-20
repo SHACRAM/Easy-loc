@@ -1,0 +1,37 @@
+[
+    {
+        "uid":"v1",
+        "licence_plate":"db457hx69",
+        "informations":"Griffe sur l'aile avant gauche, impacte sur le pare-brise",
+        "km":"32589"
+
+    },
+    {
+        "uid":"v2",
+        "licence_plate":"gr602vs69",
+        "informations":"Feux arrière droit cassé, griffe sur le pare-chox arrière",
+        "km":"65761"
+
+    },
+    {
+        "uid":"v3",
+        "licence_plate":"pk313ms69",
+        "informations":"Parechoc avant décroché, jante arrière gauche giffée",
+        "km":"57432"
+
+    },
+    {
+        "uid":"v4",
+        "licence_plate":"dv890ty69",
+        "informations":"Etat neuf rien à signaler",
+        "km":"2500"
+
+    },
+    {
+        "uid":"v5",
+        "licence_plate":"rd208ds69",
+        "informations":"Trace de clef autour de la sérrure, coup sur la portière arrière gauche",
+        "km":"6780"
+
+    }
+]
