@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] =="POST"){
         ?>
         <p>Merci de remplir le champs</p>
         <?php
-    } else {
+    } else {//permet de faire une recherche de contrat
         $_SESSION["search"] = htmlspecialchars($input);
         header("Location: search_contract.php");
     }

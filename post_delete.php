@@ -11,7 +11,7 @@ if(!isset($_POST['contract_id'])){
 
 $id = $_POST['contract_id'];
 
-$result_delete = deleteContract($id);
+$result_delete = deleteContract($id); //permet d'envoyer la demande de supression à la base de données
 
 if (!$result_delete) {
     ?>

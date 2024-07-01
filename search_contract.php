@@ -18,8 +18,15 @@ if(isset($search_contract)){
                 <li>Date de retour du véhicule : <?php echo($contract['Returning_datetime']);?></li>
                 <li>Prix de la location : <?php echo($contract['Price']);?> €</li>
             </ul>
-            <form action="modify_contract.php" method="POST">
-                <input type="hidden" name="contract_id" value="<?php echo $contract['id']; ?>">
+            <form action="store_contract_in_session.php" method="POST">
+                <input type="hidden" name="contract_id" value="<?php echo htmlspecialchars($contract['id']); ?>">
+                <input type="hidden" name="vehicule" value="<?php echo htmlspecialchars($contract['Vehicle_uid']); ?>">
+                <input type="hidden" name="client" value="<?php echo htmlspecialchars($contract['Customer_uid']); ?>">
+                <input type="hidden" name="dateSignature" value="<?php echo htmlspecialchars($contract['Sign_datetime']); ?>">
+                <input type="hidden" name="dateDebutLoc" value="<?php echo htmlspecialchars($contract['Loc_begin_datetime']); ?>">
+                <input type="hidden" name="dateFinLoc" value="<?php echo htmlspecialchars($contract['Loc_end_datetime']); ?>">
+                <input type="hidden" name="dateRetour" value="<?php echo htmlspecialchars($contract['Returning_datetime']); ?>">
+                <input type="hidden" name="prix" value="<?php echo htmlspecialchars($contract['Price']); ?>">
                 <button type="submit">Modifier le contrat</button>
             </form>
             <form action="delete_contract.php" method="POST">
